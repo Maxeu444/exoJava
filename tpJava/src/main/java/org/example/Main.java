@@ -1,8 +1,10 @@
 package org.example;
 
 import org.example.FindCarre.FindCarre;
+import org.example.array.ArrayExo;
 import org.example.askName.AskName;
 import org.example.category.CategorieAge;
+import org.example.chaineCaract.ChaineCaract;
 import org.example.divisible.DivisibleNumber;
 import org.example.findNegPos.PosiNega;
 import org.example.multiplication.Multiply;
@@ -24,7 +26,10 @@ public class Main {
 //        DivisibleNumber.isDivisible();
 //        ImpressionPrix.getPrice();
 //        Multiply.getMultiply();
-        Somme.getSomme();
+//        Somme.getSomme();
+//        ArrayExo.doDecalage();
+
+        ChaineCaract.countOccurence();
 
 
     }
