@@ -50,5 +50,12 @@ public class Main {
 //        compte2.debiterCompte(2000);
 
 
+        enum JourSemaine {
+            LUNDI, MARDI, MERCREDI
+        }
+
+        JourSemaine today = JourSemaine.LUNDI ;
+
+
     }
 }
