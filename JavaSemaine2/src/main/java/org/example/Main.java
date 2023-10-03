@@ -9,7 +9,7 @@ import static org.example.tpSemaine2.Couleur.JAUNE;
 
 public class Main {
     public static void main(String[] args) {
-        
+
 //        BankAccount compte1 = new BankAccount(500, "Max");
 //        System.out.println(compte1);
 //        compte1.déposer();

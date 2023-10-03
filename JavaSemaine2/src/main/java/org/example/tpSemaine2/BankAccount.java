@@ -4,23 +4,15 @@ import java.util.Scanner;
 
 public class BankAccount {
 
-int accountNumber = 1;
+    private String numeroCompte;
 float soldeCompte;
 String ownerName;
 Scanner scanner = new Scanner(System.in);
 
-    public BankAccount(float soldeCompte, String ownerName) {
+    public BankAccount(String numeroCompte, float soldeCompte, String ownerName) {
+        this.numeroCompte = numeroCompte;
         this.soldeCompte = soldeCompte;
         this.ownerName = ownerName;
-        accountNumber++;
-    }
-
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
     }
 
     public float getSoldeCompte() {
@@ -72,7 +64,6 @@ Scanner scanner = new Scanner(System.in);
     @Override
     public String toString() {
         return "BankAccount{" +
-                "accountNumber=" + accountNumber +
                 ", soldeCompte=" + soldeCompte +
                 ", ownerName='" + ownerName + '\'' +
                 '}';
