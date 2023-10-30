@@ -11,12 +11,11 @@ import java.util.List;
 @Controller
 public class baseController {
 
-
-
-        @RequestMapping(value = "/")
-        @ResponseBody
-        public List<String> personJson(){
-            return List.of("Renault","mercedes","audi");
-        }
+    @RequestMapping(value = "/coll-params")
+    public String carBrands(Model model){
+        List<String> cars = List.of("Renault","mercedes","audi");
+        model.addAttribute("cars",cars);
+        return "base";
+    }
 
 }
