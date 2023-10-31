@@ -13,8 +13,8 @@ public class Exercice2 {
         try {
             int i = Integer.valueOf(chaine).intValue();
             System.out.println("Votre entier est: " + i);
-        } catch (Exception e) {
-            throw new Exception("Cette chaine ne représente pas un entier");
+        } catch (NumberFormatException e) {
+            System.out.println("Cette chaine ne représente pas un entier");
         }
     }
 }

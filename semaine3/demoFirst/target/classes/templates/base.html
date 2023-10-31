@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+</head>
+<body>
+<h1>Voiture</h1>
+
+<ul th:unless="${cars.isEmpty()}">
+    <li th:each="p: ${cars}"><span th:text="${p}"></span></li>
+</ul>
+
+<p th:if="${cars.isEmpty()}">
+    Il n'y a aucune marque de voiture dans la liste
+</p>
+
+</body>
+</html>
