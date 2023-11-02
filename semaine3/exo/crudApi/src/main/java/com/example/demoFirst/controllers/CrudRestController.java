@@ -40,7 +40,7 @@ public class CrudRestController {
         return student;
     }
 
-    
+
     @DeleteMapping("/{id}")
     public String deleteStudent(@PathVariable String id) {
 
